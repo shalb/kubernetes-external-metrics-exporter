@@ -1,0 +1,7 @@
+version: '2'
+services:
+  kubernetes-external-metrics-exporter:
+    build:
+      context: ./
+    image: shalb/kubernetes-external-metrics-exporter:0.0.1
+

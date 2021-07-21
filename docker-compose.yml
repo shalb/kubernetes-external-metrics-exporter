@@ -1,0 +1,9 @@
+version: '2'
+services:
+  kubernetes-external-metrics-exporter:
+    image: shalb/kubernetes-external-metrics-exporter:0.0.1
+    volumes:
+      - ./exporter:/opt/exporter
+    restart: always
+    ports:
+      - "127.0.0.1:9610:9610"
